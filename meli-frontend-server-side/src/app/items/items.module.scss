@@ -1,0 +1,12 @@
+@import '../../scss/globals.scss';
+
+.body{
+    background-color: $background-color;
+    height: 100%;
+    @include md {
+        padding: 0 5% 1% 5%;
+    }
+    @include lg {
+        padding: 0 20% 5% 20%;
+    }
+}

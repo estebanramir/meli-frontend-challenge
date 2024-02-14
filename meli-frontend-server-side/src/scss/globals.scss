@@ -1,0 +1,45 @@
+$background-color: #ebebeb;
+$meli-yellow: #fee600;
+$white-color: #ffffff;
+$lightest-gray-color: #eeeeee;
+$light-gray-color: #979797;
+$gray-color: #828282;
+$black-color: #000000;
+$blue-color: #3583fa;
+$green-color: #1ade69;
+
+$label-font-size: 0.9rem;
+$header-font-size: 1.5rem;
+$subheader-font-size: 1.25rem;
+$price-font-size: 2rem;
+$body-font-size: 1rem;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 380px;
+
+// Small tablets (portrait view)
+$screen-md-min: 960px;
+
+// Tablets and small desktops
+$screen-lg-min: 1240px;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}

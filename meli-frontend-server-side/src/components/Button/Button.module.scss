@@ -1,0 +1,9 @@
+@import '../../scss/globals.scss';
+
+.button {
+  background-color: $blue-color;
+  color: $white-color;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}

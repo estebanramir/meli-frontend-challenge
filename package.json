@@ -1,0 +1,13 @@
+{
+  "name": "meli-frontend-challenge",
+  "version": "1.0.0",
+  "description": "meli frontend challenge",
+  "scripts":{
+    "dev:web": "cd meli-frontend-server-side && npm run dev",
+    "dev:server": "cd backend-api && npm run start",
+    "dev": "concurrently \"npm:dev:web\" \"npm:dev:server\" -c \"bgGreen.bold,bgYellow.bold\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../scss/globals.scss';
+
+.productItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 2px solid $lightest-gray-color;
+  &-brief {
+    flex-basis: 60%;
+    padding: 15px 20px 0;
+  }
+  &-imageWrapper {
+    flex-basis: 160px;
+    width: 160px;
+    height: 160px;
+  }
+  &-image {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3px;
+    object-fit: contain;
+  }
+  &-location {
+    flex-basis: 20%;
+    padding-top: 2rem;
+    font-size: $label-font-size;
+    color: $gray-color;
+  }
+  &-price {
+    display: block;
+    font-size: $subheader-font-size;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+  }
+  &-title {
+    color: $black-color;
+  }
+  &-briefHeader {
+    display: flex;
+    flex-direction: row;
+  }
+  &-freeShipping {
+    background-color: $green-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    img {
+      margin: auto;
+      width: 13px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}

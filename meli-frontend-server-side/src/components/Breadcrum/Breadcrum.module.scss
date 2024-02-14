@@ -1,0 +1,25 @@
+@import '../../scss/globals.scss';
+
+.breadcrum {
+  padding: 15px 15px;
+  font-size: 0.9em;
+  @include md {
+    padding: 15px 0;
+  }
+  &-divider {
+    width: 10px;
+    margin: 0 5px;
+    color: $light-gray-color;
+  }
+  a {
+    text-decoration: none;
+    color: $light-gray-color;
+  }
+  span {
+    color: $light-gray-color;
+    font-weight: bold;
+  }
+  &-category {
+    display: inline;
+  }
+}

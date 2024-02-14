@@ -1,0 +1,66 @@
+@import '../../scss/globals.scss';
+
+.productDetail {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $white-color;
+  padding: 40px;
+  border-radius: 3px;
+  &-imageWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+    @include lg {
+      flex-basis: 70%;
+    }
+  }
+  &-sideContent {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    @include lg {
+      flex-basis: 30%;
+    }
+  }
+  &-mainContent {
+    flex-basis: 100%;
+    @include lg {
+      flex-basis: 70%;
+    }
+  }
+  &-descTitle {
+    font-size: $header-font-size;
+    margin-bottom: 30px;
+  }
+
+  &-image {
+    max-width: 100%;
+    max-height: 800px;
+    object-fit: contain;
+  }
+  &-description {
+    color: $gray-color;
+  }
+  &-condition {
+    font-size: $label-font-size;
+    margin-bottom: 10px;
+  }
+  &-title {
+    font-size: $header-font-size;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  &-price {
+    display: flex;
+    align-items: flex-start;
+    font-size: $price-font-size;
+    margin-bottom: 40px;
+  }
+  &-priceDecimals {
+    font-size: $body-font-size;
+  }
+}

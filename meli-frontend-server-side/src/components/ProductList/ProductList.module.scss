@@ -1,0 +1,10 @@
+@import '../../scss/globals.scss';
+
+.productsList{
+    background-color: $white-color;
+    border-radius: 3px;
+    padding: 0 10px;
+    li:last-child {
+        border-bottom: none;
+    }
+}
