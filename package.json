@@ -1,13 +1,18 @@
 {
-  "name": "meli-frontend-challenge",
-  "version": "1.0.0",
-  "description": "meli frontend challenge",
-  "scripts":{
-    "dev:web": "cd meli-frontend-server-side && npm run dev",
-    "dev:server": "cd backend-api && npm run start",
-    "dev": "concurrently \"npm:dev:web\" \"npm:dev:server\" -c \"bgGreen.bold,bgYellow.bold\""
-  },
-  "dependencies": {
-    "concurrently": "^8.2.2"
-  }
+    "name": "meli-frontend-challenge",
+    "version": "1.0.0",
+    "description": "meli frontend challenge",
+    "scripts": {
+        "dev:web": "cd meli-frontend-server-side && npm run dev",
+        "dev:server": "cd backend-api && npm run start",
+        "dev": "concurrently \"npm:dev:web\" \"npm:dev:server\" -c \"bgGreen.bold,bgYellow.bold\"",
+        "install:server": "cd backend-api && npm i",
+        "install:web": "cd meli-frontend-server-side && npm i",
+        "install:all": "npm run install:server && npm run install:web && npm i",
+        "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2",
+        "prettier": "^3.2.5"
+    }
 }

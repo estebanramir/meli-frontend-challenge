@@ -4,9 +4,10 @@
 
 1.  Asegurarse de tener instalada una versión de Node.js igual o superior a 10.13
 2.  Clonar el repositorio `https://github.com/estebanramir/meli-frontend-challenge`
-3.  Navega a las carpetas de `backend-api` y `meli-frontend-server-side` y segurate de instalar los apcketes de npm con `npm i`
-4. En la carpeta raiz corre el comanod `npm run dev`
+3.  En la carpeta raiz corre el comanod `npm run install:all` y espera a que se instalen todos los modulos de Node
+4.  En la carpeta raiz corre el comando `npm run dev`
 5.  La aplicacion queda expuesta en http://localhost:3000/
+6.  Happy Code
 
 ## Decisiones tecnológicas
 
